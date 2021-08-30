@@ -5,23 +5,10 @@ Juukelispuukelis :-)
 <script>
     let klikkaukset=0;
     function Klikkaus(){
-        klikkaukset++;
+        klikkaukset++
+        document.getElementById("numero").innerHTML =klikkaukset
         if(klikkaukset > 10){
             alert(":-)")
         }
     }
 </script>
-
-<html>
-<body>
-
-<h1>Juukelispuukelis aika</h1>
-
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Nyt on</button>
-
-<p id="demo"></p>
-
-</body>
-</html> 
