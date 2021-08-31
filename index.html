@@ -1,14 +1,20 @@
-Juukelispuukelis :-)
+<head>
+    Juukelispuukelis
+</head>
+<body>
+    Juukelispuukelis :-)
 
-<button type="button" onclick="Klikkaus()" >kyllä</button>
-<p>Juukelispuukelis <p id="numero">0 </p></p>
+<img onclick="Klikkaus()" src="egg.png" alt="" id="egg" width="200">
+<p>Juukelispuukelis vol.2 <p id="numero">0 </p></p>
 <script>
     let klikkaukset=0;
     function Klikkaus(){
         klikkaukset++
         document.getElementById("numero").innerHTML =klikkaukset
         if(klikkaukset > 10){
-            alert(":-)")
+            document.getElementById("egg").src = "egg2.png"
+            alert(":-( Hävisit pelin")
         }
     }
 </script>
+</body>
